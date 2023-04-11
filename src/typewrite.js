@@ -106,6 +106,7 @@
                 $(settings.mainEl).trigger('typewriteComplete');
                 if(settings.continuous){
                     $(settings.el).empty();
+                    settings.queue = actions.length;
                     processActions();
                 }
             }
