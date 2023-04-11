@@ -102,12 +102,13 @@
 
         var done = setInterval(function(){
             if(settings.queue === 0){
-                clearInterval(done);
                 $(settings.mainEl).trigger('typewriteComplete');
                 if(settings.continuous){
                     $(settings.el).empty();
                     settings.queue = actions.length;
                     processActions();
+                } else {
+                  clearInterval(done);
                 }
             }
         }, 500);
