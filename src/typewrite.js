@@ -7,7 +7,7 @@
             showCursor: true,
             blinkingCursor: true,
             cursor: '|',
-            selectedBackground: '#6ec4ff45',
+            selectedBackground: '#6EC4FF45',
             selectedText: 'initial',
             continuous: false
         }, options);

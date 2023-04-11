@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 ### actions
 
-`typewrite` can add text, delay (pause), remove text and even select text. 
+`typewrite` can add text, delay (pause), remove text and even select text.
 
 #### Typing
 
@@ -122,9 +122,9 @@ The following will change the typing speed to 22 characters per second.
 
 **cursor** {string}: The cursor character - Default: `'|'`
 
-**selectedBackground** {string}: The Hex color value of the selected background - Default: `'#F1F1F1'`
+**selectedBackground** {string}: The Hex color value of the selected background - Default: `'#6EC4FF45'`
 
-**selectedText** {string}: The Hex color value of the selected text - Default: `'#333333'`
+**selectedText** {string}: The Hex color value of the selected text - Default: `'initial'`
 
 **continuous** {boolean}: Whether to run on continuous loop - Default: `false`
 
