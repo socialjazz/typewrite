@@ -4,24 +4,17 @@ A javascript typewriter library which animates the **typing**, **deleting**, and
 
 <img src="https://raw.githubusercontent.com/mrvautin/typewrite/master/typewrite.gif" width="640">
 
-### Demo 
+### Demo
 See [here](https://rawgit.com/mrvautin/typewrite/master/index.html "Demo").
 
 ### Installation
 
 `typewrite` is a jQuery plugin, so it needs to be included in your HTML after jQuery. e.g:
 
-From repo:
-
-``` javascript
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="dist/typewrite.min.js"></script>
-```
-
 From CDN:
 ``` javascript
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.rawgit.com/mrvautin/typewrite/master/dist/typewrite.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/socialjazz/typewrite/dist/typewrite.min.js"></script>
 ```
 
 Setup your target element to type into:
