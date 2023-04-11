@@ -5,7 +5,7 @@
             speed: 12,
             blinkSpeed: 2,
             showCursor: true,
-            blinkingCursor: 'opacity',
+            blinkingCursor: true,
             cursor: '|',
             selectedBackground: '#6ec4ff45',
             selectedText: 'initial',
@@ -22,17 +22,11 @@
                 // cache cursor object
                 var $cursor = $('.blinkingCursor');
                 setInterval(function(){
-                    // check if blinkingCursor is set to opacity
-                    if(settings.blinkingCursor === 'opacity'){
-                        // toggle cursor opacity
-                        if($cursor.css('opacity') === '1'){
-                            $cursor.css({'opacity': 0});
-                        }else{
-                            $cursor.css({'opacity': 1});
-                        }
+                    // toggle cursor opacity
+                    if($cursor.css('opacity') === '1'){
+                        $cursor.css({'opacity': 0});
                     }else{
-                        // default to show/hide
-                        $cursor.toggle();
+                        $cursor.css({'opacity': 1});
                     }
                 }, settings.blinkSpeed);
             }
