@@ -5,10 +5,10 @@
             speed: 12,
             blinkSpeed: 2,
             showCursor: true,
-            blinkingCursor: true,
+            blinkingCursor: 'opacity',
             cursor: '|',
-            selectedBackground: '#F1F1F1',
-            selectedText: '#333333',
+            selectedBackground: '#6ec4ff45',
+            selectedText: 'initial',
             continuous: false
         }, options);
 
@@ -25,7 +25,7 @@
                     // check if blinkingCursor is set to opacity
                     if(settings.blinkingCursor === 'opacity'){
                         // toggle cursor opacity
-                        if($cursor.css('opacity') === '1'){ 
+                        if($cursor.css('opacity') === '1'){
                             $cursor.css({'opacity': 0});
                         }else{
                             $cursor.css({'opacity': 1});
